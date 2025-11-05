@@ -8,11 +8,11 @@ public class Exercicio_2 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o raio de um cículo para o cálculo");
+        System.out.println("Digite o raio de um círculo para o cálculo");
         float raio = sc.nextFloat();
 
-        System.out.printf("A area do círculo é %.2f %n", (Math.PI * Math.pow(raio, 2)));
-        System.out.printf("O perímetro do cículo é %.2f %n", (2 * Math.PI * raio));
+        System.out.printf("A área do círculo é %.2f %n", (Math.PI * Math.pow(raio, 2)));
+        System.out.printf("O perímetro do círculo é %.2f %n", (2 * Math.PI * raio));
 
         sc.close();
     }
