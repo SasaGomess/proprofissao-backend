@@ -23,7 +23,7 @@ public class Exercicio_4 {
 
         float media = (nota1 * 2) + (nota2 * 3) + (nota3 * 5) / 10;
 
-        System.out.printf("A media das notas é %.2f", media);
+        System.out.printf("A media poderada das notas é %.2f", media);
         scanner.close();
     }
 }
