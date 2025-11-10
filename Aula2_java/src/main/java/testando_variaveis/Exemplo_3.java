@@ -22,5 +22,13 @@ public class Exemplo_3 {
         float media = (nota1 + nota2 + nota3) / 3;
 
         System.out.printf("A media das notas é %.2f", media);
+
+        if (media >= 6 ){
+            System.out.println("Você está aprovado");
+        } else if (media >= 5) {
+            System.out.println("Você está de recuperação");
+        }else {
+            System.out.println("Você está reprovado");
+        }
     }
 }
