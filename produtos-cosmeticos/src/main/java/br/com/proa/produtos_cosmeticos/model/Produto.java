@@ -16,9 +16,6 @@ public class Produto {
     @Column(name = "preco")
     private BigDecimal preco;
 
-    @Column(name = "tipo")
-    private String tipo;
-
     @Column(name = "quant_estoque")
     private int quantEstoque;
 
@@ -47,14 +44,6 @@ public class Produto {
 
     public void setPreco(BigDecimal preco) {
         this.preco = preco;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public int getQuantEstoque() {

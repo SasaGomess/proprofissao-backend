@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/produtos")
+@RequestMapping("produtos")
 public class ProdutoController {
 
     @Autowired
@@ -20,7 +20,7 @@ public class ProdutoController {
     }
 
     @PostMapping
-    public void salvarProduto(@PathVariable Produto produto){
+    public void salvarProduto(@RequestBody Produto produto){
         repository.save(produto);
     }
 
@@ -28,4 +28,5 @@ public class ProdutoController {
     public Produto pegaProdutoPeloId(@PathVariable Long id){
         return repository.findById(id).orElseThrow();
     }
+
 }
